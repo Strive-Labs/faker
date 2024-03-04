@@ -1,21 +1,32 @@
-$:.push File.expand_path("../lib", __FILE__)
-require "faker/version"
+# frozen_string_literal: true
 
-Gem::Specification.new do |s|
-  s.name        = "faker"
-  s.version     = Faker::VERSION
-  s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Benjamin Curtis"]
-  s.email       = ["benjamin.curtis@gmail.com"]
-  s.homepage    = "https://github.com/stympy/faker"
-  s.summary     = %q{Easily generate fake data}
-  s.description = %q{Faker, a port of Data::Faker from Perl, is used to easily generate fake data: names, addresses, phone numbers, etc.}
-  s.license     = 'MIT'
+$LOAD_PATH.push File.expand_path('lib', __dir__)
+require 'faker/version'
 
-  s.add_dependency('i18n', '~> 1.6')
+Gem::Specification.new do |spec|
+  spec.name        = 'faker'
+  spec.version     = Faker::VERSION
+  spec.platform    = Gem::Platform::RUBY
+  spec.authors     = ['Benjamin Curtis', 'Vitor Oliveira']
+  spec.email       = ['benjamin.curtis@gmail.com', 'vbrazo@gmail.com']
 
-  s.files         = Dir['lib/**/*'] + %w(History.txt License.txt README.md)
-  s.test_files    = Dir['{test,spec,features}/**/*']
-  s.executables   = Dir['bin/*'].map{ |f| File.basename(f) }
-  s.require_paths = ["lib"]
+  spec.summary     = 'Easily generate fake data'
+  spec.description = 'Faker, a port of Data::Faker from Perl, is used to easily generate fake data: names, addresses, phone numbers, etc.'
+  spec.homepage    = 'https://github.com/faker-ruby/faker'
+  spec.license     = 'MIT'
+
+  spec.files         = Dir['lib/**/*'] + %w[License.txt CHANGELOG.md README.md]
+  spec.bindir        = 'bin'
+  spec.executables   = ['faker']
+  spec.require_paths = ['lib']
+  spec.required_ruby_version = '>= 2.7'
+
+  spec.metadata['changelog_uri'] = 'https://github.com/faker-ruby/faker/blob/main/CHANGELOG.md'
+  spec.metadata['source_code_uri'] = 'https://github.com/faker-ruby/faker'
+  spec.metadata['bug_tracker_uri'] = 'https://github.com/faker-ruby/faker/issues'
+  spec.metadata['documentation_uri'] = 'https://rubydoc.info/github/faker-ruby/faker'
+  spec.metadata['yard.run'] = 'yri'
+  spec.metadata['rubygems_mfa_required'] = 'true'
+
+  spec.add_dependency('i18n', '>= 1.8.11', '< 2')
 end

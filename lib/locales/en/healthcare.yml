@@ -1,0 +1,86 @@
+en:
+  faker:
+    healthcare:
+      hospital:
+        - "#{location} #{type}"
+
+      pt_clinic:
+        - "#{location} #{pt_type}"
+
+      type: ['Medical Center','Community Hospital','General Hospital','Children’s Hospital']
+
+      location: ['Oak Crest','Hopedale','Rose Valley','Garden City','Lakeside',
+                  'Pine Valley','Highlands','Greenlawn','Trinity','Boston','St. Vincent',
+                  'Genesis','Jade Forest','Desert Springs','Silver Gardens','Massachusetts',
+                  'Springfield','Emerson','Longwood','St. Francis','New England','Sisters of Charity']
+
+      pt_type: ['Therapeutic Services','Physical Therapy Associates','Body Harmony Center',
+                'Therapy and Sports Center','Physical Therapy and Sports Medicine','Therapy Specialists']
+
+      icd9: ["355.6", "788.39", "712.37", "832.19", "804.92", "911.1", "727.63", "926",
+            "861.11", "847", "820.2", "944.37", "724", "945.03", "871.4", "943.42",
+            "719.87", "959.19", "201.11", "915.8", "833.19", "873.4", "173.19", "814.03",
+            "910.7", "836.2", "719.48", "991.4", "736.05", "815.14", "927", "369.17", "835",
+            "952.8", "806.71", "718.43", "942.24", "719.23", "680.3", "349", "170.6", "E965.0",
+            "901.83", "754.71", "16.54", "716.85", "718.82", "941.08", "805.06", "891.2"]
+
+      body_part:  ["Head", "Spinal Cord Injury (SCI)", "Foot", "Eye", "Pelvic/Urogenital",
+                  "Other/Unspecified", "Ankle/Lower Leg/Calf", "Shoulder/Upper Arm", "Hand",
+                  "Thoracic", "Temporomandibular Joint", "Cervical", "Wrist", "Vestibular", "Hip", "Elbow"]
+
+      board_cert: ['Dermatology','Obstetrics and Gynecology','Ophthalmology','Otolaryngology',
+                    'Orthopaedic Surgery','Pediatrics','Psychiatry and Neurology','Radiology',
+                    'Urology','Internal Medicine','Pathology','Surgery','Neurological Surgery',
+                    'Anesthesiology','Plastic Surgery','Physical Medicine and Rehabilitation',
+                    'Preventive Medicine','Family Medicine','Emergency Medicine','Medical Genetics and Genomics']
+
+      orthopedics: ['Achilles Tendinitis','ACL Injury','Arthritis of the Foot & Ankle',
+                    'Arthritis of the Hand','Bunion','Bursitis/Rotator Cuff Tendinitis',
+                    'Carpal Tunnel Syndrome','Chronic Shoulder Pain','Common Knee Condition',
+                    'Cubital Tunnel Syndrome','Dupuytren’s Contracture','Ganglion Cyst',
+                    'Hammer Toe','Hip Arthritis','Hip Bursitis','Hip Fracture','Hip Impingement',
+                    'Hip Replacement Surgery','Knee Replacement Surgery','Labral Tear of the Shoulder',
+                    'MCL Injury','Morton’s Neuroma','Olecranon Bursitis','PCL Injury','Plantar Fasciitis',
+                    'Posterior Impingement of the Ankle','Rotator Cuff Tear','Sever’s Disease',
+                    'Shoulder Arthritis','Sports-Related Hand Injury','Stress Fracture of the Foot & Ankle',
+                    'Tendinitis of the Wrist','Tennis Elbow','Throwing Injury',
+                    'Trigger Finger','Wrist Fracture','Arthritis of the Knee']
+
+      doctor:
+        - "#{Name.first_name} #{Name.last_name}, MD"
+
+      nurse:
+        - "#{Name.first_name} #{Name.last_name}, RN"
+
+      physical_therapist:
+        - "#{Name.first_name} #{Name.last_name}, DPT"
+
+      pharmaceutical: ['Abilify','Nexium','Humira','Crestor','Advair Diskus','Enbrel',
+                      'Remicade','Cymbalta','Copaxone','Neulasta','Lantus Solostar','Rituxan',
+                      'Spiriva Handihaler','Januvia','Atripla','Lantus','Avastin','Lyrica']
+
+      insurance_provider: ['Unimark Group','Wellmark Group','Healthmark Foundation Group',
+                            'Bluemark Group of California','Wellness Net, Inc.', 'Mediwatch of Massachusetts']
+
+      degrees_and_licenses: ['MD','PhD','RN','DPT','DNS','NP','DNP']
+
+      icd9_description: ["814.12 : OPEN FRACTURE OF LUNATE (SEMILUNAR) BONE OF WRIST (Wrist)",
+                        "940.1 : OTHER BURNS OF EYELIDS AND PERIOCULAR AREA (Eye)",
+                        "719.11 : HERARTHROSIS INVOLVING SHOULDER REGION (Shoulder/Upper Arm)",
+                        "170.2 : MALIGNANT NEOPLASM OF VERTEBRAL COLUMN EXCLUDING SACRUM AND COCCYX (Sacrum)",
+                        "945.23 : BLISTERS WITH EPIDERMAL LOSS DUE TO BURN (SECOND DEGREE) OF ANKLE (Ankle/Lower Leg/Calf)",
+                        "839.41 : CLOSED DISLOCATION COCCYX (Sacrum)",
+                        "718.21 : PATHOLOGICAL DISLOCATION OF JOINT OF SHOULDER REGION (Shoulder/Upper Arm)",
+                        "722.52 : DEGENERATION OF LUMBAR OR LUMBOSACRAL INTERVERTEBRAL DISC (Lumbar/Lower Back)",
+                        "V53.6 : FITTING AND ADJUSTMENT OF URINARY DEVICES (Pelvic/Urogenital)",
+                        "861.31 : CONTUSION OF LUNG WITH OPEN WOUND INTO THORAX (Thoracic)",
+                        "916.2 : BLISTER OF HIP THIGH LEG AND ANKLE WITHOUT INFECTION (Ankle/Lower Leg/Calf)",
+                        "369.67 : ONE EYE: PROFOUND VISION IMPAIRMENT; OTHER EYE: VISION NOT SPECIFIED (Eye)",
+                        "942.4 : DEEP NECROSIS OF UNDERLYING TISSUES DUE TO BURN (DEEP THIRD DEGREE) OF TRUNK UNSPECIFIED SITE WITHOUT LOSS OF BODY PART (Thoracic)",
+                        "718.41 : CONTRACTURE OF JOINT OF SHOULDER REGION (Shoulder/Upper Arm)",
+                        "861.21 : CONTUSION OF LUNG WITHOUT OPEN WOUND INTO THORAX (Thoracic)",
+                        "711.21 : ARTHROPATHY IN BEHCET'S SYNDROME INVOLVING SHOULDER REGION (Shoulder/Upper Arm)",
+                        "209.35 : MERKEL CELL CARCINOMA OF THE TRUNK (Thoracic)"]
+
+      icd10: ['S91139S','L89003','S28211S','V145XXS','S52379N','T82312D','S52342G','S41152D','S062X2S',
+            'T401X3D','S62125K','T22269D','S12291D','S52025R','H9531','T82848A','R897','I82B12','M86339']

@@ -1,3 +1,5 @@
-module Faker #:nodoc:
-  VERSION = "1.6.1"
+# frozen_string_literal: true
+
+module Faker # :nodoc:
+  VERSION = '3.2.3'
 end
